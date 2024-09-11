@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:recipe_app/models/recipe.dart';
 
 class RecipeApi {
-  Future<List<Recipe>> getRecipes() async {
+  Future<List<Recipe>> getRecipe() async {
     final uri = Uri.https("yummly2.p.rapidapi.com", "feeds/list/", {
       "limit": "18",
       "start": "0",
